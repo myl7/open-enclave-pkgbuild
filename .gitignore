@@ -1,0 +1,7 @@
+# Binary packages
+*.deb
+*.tar.zst
+
+# Working dir
+/*/src
+/*/pkg
