@@ -7,7 +7,7 @@ pkgrel=1
 pkgdesc='Open Enclave SDK'
 arch=('x86_64')
 url='https://openenclave.io/sdk/'
-# _giturl='https://github.com/openenclave/openenclave'
+_giturl='https://github.com/openenclave/openenclave'
 # Since it bundles all submodule deps
 license=('Apache-2.0')
 optdepends=(
@@ -16,7 +16,7 @@ optdepends=(
 )
 changelog="$_pkgname.changelog.md"
 source=(
-  "https://github.com/openenclave/openenclave/releases/download/v${pkgver}/Ubuntu_2004_${_pkgname}_${pkgver}_amd64.deb"
+  "${_giturl}/releases/download/v${pkgver}/Ubuntu_2004_${_pkgname}_${pkgver}_amd64.deb"
   'LICENSES'
 )
 # The following URL has not been updated:
